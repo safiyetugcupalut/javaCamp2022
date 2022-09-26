@@ -2,10 +2,19 @@ package day2Homework2.classesWithAttributes.src;
 
 public class Product {
 	
-	public Product(){
+	public Product(int id, String name, String description, double price, int stockAmount, String renk){
 		System.out.println("Yapıcı blok çalıştı");
+		this._id = id;
+		this._renk = renk;
+		this._name = name;
+		this._price = price;
+		this._description = description;
+		this._stockAmount = stockAmount;
+		
 	}
-	
+	public Product() {
+		
+	}
 	    private int _id;
 	    private String _name;
 	    private String _description;
